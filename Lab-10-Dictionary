@@ -1,0 +1,17 @@
+print("^^^^^^ HITUNG-HITUNG INDEX YUK!!!! ^^^^^^")
+print()
+print("Naah ini hasil dari index perhuruf yang kamu cari !!!")
+print()
+def index_index(baris):
+    key=list(dict.fromkeys(baris))
+    fix={}
+    for m in key:
+        tampung=[]
+        for k in range(len(baris)):
+            if baris[k]==m:
+                tampung.append(k)
+        fix[m]=tampung
+    print(fix)
+
+list_huruf=["o","b","y","b","r","c","g","k","w","v","g","t","q","u","z","e"]
+index_index(list_huruf)
